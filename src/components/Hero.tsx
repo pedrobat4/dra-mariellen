@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="absolute -top-40 right-[-10%] h-[34rem] w-[34rem] rounded-full bg-sky/14 blur-[130px]" />
       <div className="absolute bottom-[-18%] left-[-8%] h-[28rem] w-[28rem] rounded-full bg-sand/12 blur-[120px]" />
 
-      {/* line-art do rosto (da própria logo) */}
+      {/* line-art do rosto (da própria logo) — só em telas médias, sem a foto */}
       <motion.img
         src="/face-white.png"
         alt=""
@@ -23,8 +23,28 @@ export default function Hero() {
         initial={{ opacity: 0, x: 60 }}
         animate={{ opacity: 0.16, x: 0 }}
         transition={{ duration: 1.6, delay: 0.3, ease }}
-        className="animate-drift pointer-events-none absolute top-[8%] right-[-6%] hidden h-[92%] w-auto object-contain select-none md:block"
+        className="animate-drift pointer-events-none absolute top-[8%] right-[-6%] hidden h-[92%] w-auto object-contain select-none md:block lg:hidden"
       />
+
+      {/* foto da Dra. fundida no azul (desktop) */}
+      <motion.div
+        initial={{ opacity: 0, x: 40 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.8, delay: 0.5, ease }}
+        className="pointer-events-none absolute inset-y-0 right-0 hidden w-[44%] select-none lg:block"
+        style={{
+          maskImage: 'linear-gradient(to right, transparent 0%, black 45%)',
+          WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 45%)',
+        }}
+      >
+        <img
+          src="/fotos/hero-1841.webp"
+          alt="Dra. Mariellen Dragone"
+          className="h-full w-full object-cover object-[center_22%]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-royal-ink/55 via-transparent to-royal-deep/25" />
+        <div className="absolute inset-0 bg-royal/20 mix-blend-multiply" />
+      </motion.div>
 
       {/* hairlines verticais decorativas */}
       <div className="pointer-events-none absolute inset-y-0 left-5 hidden w-px bg-white/8 md:left-10 md:block" />

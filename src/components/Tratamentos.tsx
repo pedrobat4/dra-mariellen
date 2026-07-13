@@ -74,19 +74,33 @@ export default function Tratamentos() {
       />
 
       <div className="relative mx-auto max-w-7xl px-5 md:px-10">
-        <Reveal>
-          <p className="eyebrow text-sky">Tratamentos</p>
-          <div className="mt-6 flex flex-wrap items-end justify-between gap-6">
-            <h2 className="max-w-2xl font-display text-4xl leading-[1.05] text-white md:text-6xl">
+        <div className="grid items-end gap-12 lg:grid-cols-[7fr_4fr]">
+          <Reveal>
+            <p className="eyebrow text-sky">Tratamentos</p>
+            <h2 className="mt-6 max-w-2xl font-display text-4xl leading-[1.05] text-white md:text-6xl">
               Um menu completo para a{' '}
               <em className="font-serif text-sky italic">sua melhor versão.</em>
             </h2>
-            <p className="max-w-sm pb-2 text-sm font-light leading-relaxed text-white/60">
+            <p className="mt-7 max-w-md text-sm font-light leading-relaxed text-white/60">
               Da harmonização facial à saúde capilar — cada protocolo começa por
               uma avaliação minuciosa e individualizada.
             </p>
-          </div>
-        </Reveal>
+          </Reveal>
+
+          <Reveal delay={0.15} className="hidden lg:block">
+            <div className="relative ml-auto max-w-[19rem]">
+              <div className="absolute -top-4 -right-4 h-full w-full border border-sky/30" />
+              <img
+                src="/fotos/trat-1840.webp"
+                alt="Dra. Mariellen aplicando sérum na pele"
+                className="relative aspect-[4/5] w-full object-cover"
+              />
+              <span className="absolute bottom-4 left-4 border border-white/25 bg-royal-ink/40 px-4 py-2 text-[0.62rem] tracking-[0.28em] text-white/85 uppercase backdrop-blur-sm">
+                Estética avançada
+              </span>
+            </div>
+          </Reveal>
+        </div>
 
         <div className="mt-16 grid gap-px overflow-hidden border border-white/14 bg-white/14 md:grid-cols-2 lg:grid-cols-3">
           {CATEGORIES.map((cat, i) => (

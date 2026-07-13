@@ -22,19 +22,15 @@ export default function Sobre() {
       />
 
       <div className="relative mx-auto grid max-w-7xl items-start gap-14 px-5 md:px-10 lg:grid-cols-[5fr_7fr] lg:gap-20">
-        {/* retrato — TROCAR pela foto da Dra. (public/dra-mariellen.jpg) */}
         <Reveal className="lg:sticky lg:top-28">
           <div className="relative">
             <div className="absolute -top-4 -left-4 h-full w-full border border-sand/60" />
-            <div className="grain relative flex aspect-[4/5] items-end justify-center overflow-hidden bg-[linear-gradient(160deg,#3a4ba8_0%,#2a3782_55%,#1c2452_100%)]">
+            <div className="relative aspect-[4/5] overflow-hidden">
               <img
-                src="/face-white.png"
-                alt="Ilustração — Dra. Mariellen Dragone"
-                className="w-[78%] translate-y-6 opacity-90"
+                src="/fotos/sobre-1829.webp"
+                alt="Dra. Mariellen Dragone sorrindo, de blazer creme"
+                className="h-full w-full object-cover"
               />
-              <span className="absolute top-5 right-5 border border-white/30 px-4 py-2 text-[0.62rem] tracking-[0.3em] text-white/80 uppercase">
-                Foto em breve
-              </span>
             </div>
             <figcaption className="mt-5 flex items-baseline justify-between border-b border-royal/15 pb-4">
               <span className="font-display text-2xl text-royal-ink">Dra. Mariellen Dragone</span>
