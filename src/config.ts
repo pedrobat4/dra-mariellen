@@ -12,7 +12,7 @@ export const WA_DEFAULT = whatsappLink(
   'Olá! Vim pelo site da Dra. Mariellen Dragone e gostaria de agendar uma avaliação.',
 )
 
-export const INSTAGRAM_URL = 'https://instagram.com/dramariellendragone' // TROCAR se o @ for outro
+export const INSTAGRAM_URL = 'https://www.instagram.com/mariellendragone/'
 
 export const CRM = 'CRM-SP 000.000 · RQE 00000' // TROCAR pelo CRM real
 
