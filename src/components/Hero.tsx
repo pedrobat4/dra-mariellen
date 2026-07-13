@@ -15,17 +15,6 @@ export default function Hero() {
       <div className="absolute -top-40 right-[-10%] h-[34rem] w-[34rem] rounded-full bg-sky/14 blur-[130px]" />
       <div className="absolute bottom-[-18%] left-[-8%] h-[28rem] w-[28rem] rounded-full bg-sand/12 blur-[120px]" />
 
-      {/* line-art do rosto (da própria logo) — só em telas médias, sem a foto */}
-      <motion.img
-        src="/face-white.png"
-        alt=""
-        aria-hidden
-        initial={{ opacity: 0, x: 60 }}
-        animate={{ opacity: 0.16, x: 0 }}
-        transition={{ duration: 1.6, delay: 0.3, ease }}
-        className="animate-drift pointer-events-none absolute top-[8%] right-[-6%] hidden h-[92%] w-auto object-contain select-none md:block lg:hidden"
-      />
-
       {/* foto da Dra. fundida no azul (desktop) */}
       <motion.div
         initial={{ opacity: 0, x: 40 }}
@@ -117,11 +106,33 @@ export default function Hero() {
           </a>
         </motion.div>
 
+        {/* foto no mobile/tablet — emerge do azul abaixo do texto */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.4, delay: 1.0, ease }}
+          className="relative -mx-5 mt-10 h-[24rem] sm:h-[30rem] md:-mx-10 md:h-[36rem] lg:hidden"
+          style={{
+            maskImage:
+              'linear-gradient(to bottom, transparent 0%, black 32%, black 86%, transparent 100%)',
+            WebkitMaskImage:
+              'linear-gradient(to bottom, transparent 0%, black 32%, black 86%, transparent 100%)',
+          }}
+        >
+          <img
+            src="/fotos/hero-1841.webp"
+            alt="Dra. Mariellen Dragone"
+            className="h-full w-full object-cover object-[center_18%]"
+          />
+          <div className="absolute inset-0 bg-royal/20 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-t from-royal-ink/50 via-transparent to-transparent" />
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, delay: 1.1 }}
-          className="mt-16 flex flex-wrap items-center gap-x-10 gap-y-3 border-t border-white/12 pt-7 text-[0.72rem] tracking-[0.22em] text-white/55 uppercase"
+          className="mt-8 flex flex-wrap items-center gap-x-10 gap-y-3 border-t border-white/12 pt-7 text-[0.72rem] tracking-[0.22em] text-white/55 uppercase lg:mt-16"
         >
           <span>Pós-graduada em Dermatologia</span>
           <span className="hidden h-1 w-1 rounded-full bg-sand sm:block" />
