@@ -29,12 +29,12 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 md:px-10">
+      <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-5 md:px-10">
         <a href="#inicio" aria-label="Dra. Mariellen Dragone — início">
           <img
             src={scrolled ? '/logo-blue.png' : '/logo-white.png'}
             alt="Dra. Mariellen Dragone"
-            className="h-12 w-auto md:h-14"
+            className="h-16 w-auto md:h-20"
           />
         </a>
 
