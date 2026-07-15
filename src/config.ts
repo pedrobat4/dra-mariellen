@@ -31,21 +31,63 @@ export const LOCATIONS = [
   },
 ]
 
-// TROCAR: depoimentos ilustrativos — substituir por depoimentos reais de pacientes
-export const TESTIMONIALS = [
+// Depoimentos REAIS — enviados por pacientes via WhatsApp (prints) e avaliações públicas do Google
+export type Testimonial = {
+  name: string
+  treatment?: string
+  text: string
+  source: 'whatsapp' | 'google'
+}
+
+export const TESTIMONIALS: Testimonial[] = [
   {
-    name: 'Camila R.',
-    treatment: 'Harmonização facial',
-    text: 'A Dra. Mariellen tem um olhar único. O resultado ficou tão natural que ninguém percebeu o procedimento — só comentam que estou com uma pele incrível.',
+    name: 'K. L.',
+    treatment: 'Botox, bioestimulador e preenchimento labial',
+    source: 'whatsapp',
+    text: 'Sempre tive receio de fazer procedimentos estéticos e perder a naturalidade, mas minha experiência foi exatamente o contrário. O resultado ficou leve, elegante e muito acima das minhas expectativas. Recomendo de olhos fechados para quem busca um resultado sofisticado, seguro e extremamente natural.',
   },
   {
-    name: 'Fernanda A.',
-    treatment: 'Protocolo Skin Quality',
-    text: 'Do primeiro contato à consulta, tudo é impecável. Ela explica cada etapa com calma e monta um plano que respeita o nosso rosto e o nosso tempo.',
+    name: 'Kyara',
+    treatment: 'Procedimentos estéticos',
+    source: 'whatsapp',
+    text: 'A aplicação foi super tranquila. A mão dela é extremamente leve, praticamente não senti dor, e dá para perceber o cuidado e a atenção em cada detalhe. O resultado ficou muito natural, respeitando minhas expressões e valorizando meu rosto, exatamente como eu queria.',
   },
   {
-    name: 'Juliana M.',
-    treatment: 'Bioestimulador de colágeno',
-    text: 'Nunca me senti tão acolhida em um consultório. Atendimento minucioso, sem pressa, e um resultado elegante que devolveu minha autoestima.',
+    name: 'M. F. C. S.',
+    treatment: 'Botox, bioestimulador, preenchimento labial e malar',
+    source: 'whatsapp',
+    text: 'Há mais de 2 anos ela cuida do meu rosto com uma atenção que é rara de encontrar: sempre avalia com calma, explica cada passo e nunca sugere procedimentos desnecessários. É difícil encontrar profissionais assim, que colocam o bem-estar do paciente acima de tudo.',
+  },
+  {
+    name: 'A. C. F.',
+    treatment: 'Botox e preenchimento full face',
+    source: 'whatsapp',
+    text: 'Ela é muito cuidadosa, sincera e passa muita confiança. Nunca tive a sensação de que estava tentando me convencer a fazer algum procedimento; pelo contrário, sempre orienta pensando no que realmente é melhor para a minha pele. Os resultados ficaram incríveis, muito naturais.',
+  },
+  {
+    name: 'Bel',
+    treatment: 'Botox e bioestimulador',
+    source: 'whatsapp',
+    text: 'Faço meus tratamentos com a Dra. Mariellen e confio muito no trabalho dela. Ela tem um olhar técnico impecável e sempre indica apenas o que realmente faz sentido para a minha pele. Os resultados ficaram muito naturais e superaram minhas expectativas.',
+  },
+  {
+    name: 'Enrique Ramos Goes',
+    source: 'google',
+    text: 'Atendimento impecável. Fiz alguns procedimentos com a doutora e estou com a autoestima renovada! Mãos leves e olhar estético preciso! Amei.',
+  },
+  {
+    name: 'Ariele Tarouco',
+    source: 'google',
+    text: 'Excelente profissional, atenciosa, extremamente atualizada e competente! Amei o resultado!',
+  },
+  {
+    name: 'Giovanni Giuliani',
+    source: 'google',
+    text: 'Médica excepcional, abordando de maneira humana e ética! Adorei os resultados.',
+  },
+  {
+    name: 'Ana Flavia De Deus Silva Fortes',
+    source: 'google',
+    text: 'Excelente profissional! Confio de olhos fechados!',
   },
 ]
