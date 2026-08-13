@@ -16,18 +16,17 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/mariellendragone/'
 
 export const CRM = 'CRM-SP 000.000 · RQE 00000' // TROCAR pelo CRM real
 
+// address vazio = card mostra só a cidade (sem endereço)
 export const LOCATIONS = [
   {
     city: 'São Paulo',
     uf: 'SP',
-    address: 'Rua Mário Amaral, 432 — Paraíso',
-    note: 'Região da Av. Paulista',
+    address: 'Zona Sul',
   },
   {
     city: 'Balneário Camboriú',
     uf: 'SC',
-    address: 'Av. Atlântica, 4950 — Barra Sul',
-    note: 'Frente mar',
+    address: '',
   },
 ]
 
@@ -40,7 +39,7 @@ export const WHATSAPP_PRINTS = [
     img: '/depoimentos/wa-kl.webp',
   },
   {
-    name: 'Kyara',
+    name: 'K. M.',
     treatment: 'Procedimentos estéticos',
     img: '/depoimentos/wa-kyara.webp',
   },
@@ -55,7 +54,7 @@ export const WHATSAPP_PRINTS = [
     img: '/depoimentos/wa-acf.webp',
   },
   {
-    name: 'Bel',
+    name: 'M. I. R. B.',
     treatment: 'Botox e bioestimulador',
     img: '/depoimentos/wa-bel.webp',
   },

@@ -22,8 +22,6 @@ const CATEGORIES = [
       'Laser CO₂ Fracionado',
       'Ultraformer®',
       'Linear Z®',
-      'HydraFacial®',
-      'Radiofrequência Facial e Corporal',
     ],
   },
   {
@@ -47,9 +45,9 @@ const CATEGORIES = [
   {
     label: 'Corporal',
     items: [
-      'Tratamento de Flacidez Facial e Corporal',
-      'Remodelação Corporal Não Invasiva',
-      'Radiofrequência Corporal',
+      'Harmonização Glútea',
+      'Tratamento de Flacidez Corporal',
+      'Esvaziadores de Gordura',
     ],
   },
   {
