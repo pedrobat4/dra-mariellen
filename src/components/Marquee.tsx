@@ -2,7 +2,6 @@ const ITEMS = [
   'Fotona 4D®',
   'Ultraformer®',
   'Laser CO₂ Fracionado',
-  'HydraFacial®',
   'Linear Z®',
   'Toxina Botulínica',
   'Bioestimuladores',

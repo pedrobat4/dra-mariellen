@@ -102,7 +102,7 @@ export default function Depoimentos() {
                     <p className="font-display text-lg text-royal">{p.name}</p>
                     <WhatsAppIcon className="h-3.5 w-3.5 shrink-0 text-[#25D366]" />
                   </div>
-                  <p className="mt-1 truncate text-[0.65rem] tracking-[0.18em] text-taupe uppercase">
+                  <p className="mt-1 line-clamp-2 text-[0.65rem] tracking-[0.18em] text-taupe uppercase">
                     {p.treatment}
                   </p>
                 </figcaption>

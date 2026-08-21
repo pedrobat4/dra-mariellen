@@ -21,7 +21,7 @@ export const LOCATIONS = [
   {
     city: 'São Paulo',
     uf: 'SP',
-    address: 'Zona Sul',
+    address: '',
   },
   {
     city: 'Balneário Camboriú',
@@ -40,7 +40,7 @@ export const WHATSAPP_PRINTS = [
   },
   {
     name: 'K. M.',
-    treatment: 'Procedimentos estéticos',
+    treatment: 'Preenchimento labial, botox e bioestimulador de colágeno',
     img: '/depoimentos/wa-kyara.webp',
   },
   {
@@ -56,7 +56,8 @@ export const WHATSAPP_PRINTS = [
   {
     name: 'M. I. R. B.',
     treatment: 'Botox e bioestimulador',
-    img: '/depoimentos/wa-bel.webp',
+    // TROCAR: confirmar iniciais e procedimento da paciente deste print novo
+    img: '/depoimentos/wa-05.webp',
   },
 ]
 

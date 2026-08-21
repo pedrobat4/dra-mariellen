@@ -4,7 +4,7 @@ import WhatsAppIcon from './WhatsAppIcon'
 
 const CREDENTIALS = [
   'Graduada em Medicina — Universidade de Marília',
-  'Pós-graduada em Cosmiatria — Derma Cosmetic',
+  'Pós-graduada em Cosmiatria — Derma Cosmetic Surgery',
   'Pós-graduanda em Dermatologia — São Leopoldo Mandic',
   'IMCAS World Congress — Paris',
   'AMWC — Aesthetic & Anti-Aging World Congress',

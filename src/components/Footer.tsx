@@ -52,7 +52,7 @@ export default function Footer() {
                     <circle cx="12" cy="12" r="4.2" />
                     <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none" />
                   </svg>
-                  Instagram
+                  @mariellendragone
                 </a>
               </li>
             </ul>
